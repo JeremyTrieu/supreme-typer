@@ -1,0 +1,51 @@
+@font-face {
+    font-family: supremeFont;
+    src: url(RabbidHighwaySignIV.otf) format("opentype");
+}
+#space {
+    margin-top: 25vh;
+}
+.red-background {
+    margin: 0 auto;
+    width: 50%;
+    background-color: red;
+    height: 30vh;
+}
+
+.typewriter h1 {
+    padding-top: 5vh;
+    text-align: center;
+    width: 90%;
+    color: white;
+    font-family: supremeFont;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    font-size: 18vh;
+    letter-spacing: .05em;
+    animation: 
+      typing 2.5s steps(30, end),
+      blink-caret 0.5s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 80% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    40% { border-color: white }
+  }
+#typedtext {
+    padding-top: 5vh;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:30px; 
+    margin: 10px 50px; 
+    letter-spacing: 6px; 
+    text-align: center;
+
+}
